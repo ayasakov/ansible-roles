@@ -12,8 +12,8 @@ magento_sftp_user_home: '/var/www/vhosts/{{ magento_vhost_domain }}'
 lsync_exclude: ['{{ magento_sft_user_home }}/var/log/', '{{ magento_document_root }}/var/cache/']
 
 magento_download_path: 'http://172.20.9.32/magento-ce/'
-magento_file_name: 'magento-1.9.3.0-2016-10-11-06-05-14.tar.gz'
-magento_sample_file_name: 'magento-sample-data-1.9.2.4-2016-10-11-07-38-13.tar.gz'
+magento_file_name: 'magento-1.9.3.0.tar.gz'
+magento_sample_file_name: 'magento-sample-data-1.9.2.4.tar.gz'
 
 nginx_vhosts: [
   {
@@ -80,7 +80,7 @@ magento_create_db: yes
 magento_garbage_files:
 - magento
 - magento-sample-data-{{ magento_sample_content_version.stdout }}
-- "magento-{{ magento_version }}.tar.gz"
+- "magento-1.9.3.0.tar.gz"
 - "magento-sample-data-{{ magento_sample_content_version.stdout }}.tar.gz"
 - index.php.sample
 - php.ini.sample
