@@ -43,6 +43,8 @@
 
 - name: Set MySQL Root Password
   mysql_user:
+    login_user: root
+    login_password: ''
     name: '{{ mysql_root_user }}'
     password: '{{ mysql_root_password }}'
     state: present
